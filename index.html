@@ -639,12 +639,6 @@
             font-size: 1rem;
             margin-top: 10px;
         }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
     </style>
 </head>
 <body>
@@ -816,12 +810,6 @@
                                 </label>
                                 <label class="radio-option">
                                     <input type="radio" name="meat1" value="Свинина" required> Свинина
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="meat1" value="Говядина" required> Говядина
-                                </label>
-                                <label class="radio-option">
-                                    <input type="radio" name="meat1" value="Рыба" required> Рыба
                                 </label>
                             </div>
                         </div>
@@ -1088,12 +1076,6 @@
                         <label class="radio-option">
                             <input type="radio" name="meat${guestNumber}" value="Свинина"> Свинина
                         </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestNumber}" value="Рыба"> Рыба
-                        </label>
                     `;
                     // Удаляем скрытое поле если оно есть
                     const hiddenInput = meatRow.querySelector('input[type="hidden"]');
@@ -1195,12 +1177,6 @@
                         </label>
                         <label class="radio-option">
                             <input type="radio" name="meat${guestCount}" value="Свинина"> Свинина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat${guestCount}" value="Рыба"> Рыба
                         </label>
                     </div>
                 `;
@@ -1392,12 +1368,6 @@
                         <label class="radio-option">
                             <input type="radio" name="meat1" value="Свинина"> Свинина
                         </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat1" value="Говядина"> Говядина
-                        </label>
-                        <label class="radio-option">
-                            <input type="radio" name="meat1" value="Рыба"> Рыба
-                        </label>
                     </div>
                 </div>
             `;
@@ -1419,6 +1389,7 @@
     </script>
 </body>
 </html>
+
 
 
 
