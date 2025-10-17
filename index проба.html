@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph мета-теги -->
+    <meta property="og:title" content="Приглашение на свадьбу | Владимир и Полина">
+    <meta property="og:description" content="Дорогие друзья и родные! Приглашаем вас разделить с нами радость нашего свадебного торжества">
+    <meta property="og:image" content="https://github.com/BelyyNiger/wedding/blob/main/assets/images/fon.jpg">
+    <meta property="og:url" content="https://github.com/BelyyNiger/wedding/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Свадьба Владимира и Полины">
+    
+    <!-- Дополнительные мета-теги для лучшего отображения -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card (для Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Приглашение на свадьбу | Владимир и Полина">
+    <meta name="twitter:description" content="Дорогие друзья и родные! Приглашаем вас разделить с нами радость нашего свадебного торжества">
+    <meta property="og:image" content="https://github.com/BelyyNiger/wedding/blob/main/assets/images/fon.jpg">
+
+    <title>Приглашение на свадьбу | Владимир и Полина</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="dangers.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            background-color: #fefefe;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/fon.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .names {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+
+        .date {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        .invitation-text {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-style: italic;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #8B4513;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #8B4513;
+            margin: 15px auto;
+        }
+
+        /* Couple Section */
+        .couple-section {
+            background-color: #fff;
+        }
+
+        .couple-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .person {
+            text-align: center;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .person:hover {
+            transform: translateY(-10px);
+        }
+
+        .person-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #f5f5f5;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .person-name {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #8B4513;
+        }
+
+        .person-role {
+            font-size: 1.2rem;
+            color: #777;
+            font-style: italic;
+        }
+
+        .heart {
+            color: #e75480;
+            margin: 0 10px;
+        }
+
+        /* Details Section */
+        .details-section {
+            background-color: #f9f5f0;
+        }
+
+        .details-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .details-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .details-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+        }
+
+        .details-info {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .details-info i {
+            margin-right: 10px;
+            color: #8B4513;
+        }
+
+        .details-map {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(139, 69, 19, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 10px;
+        }
+
+        .map-overlay:hover {
+            opacity: 1;
+        }
+
+        .map-overlay-text {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            color: #8B4513;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Countdown */
+        .countdown-section {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            margin: 10px 20px;
+            text-align: center;
+            background: #f9f5f0;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 120px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .countdown-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* RSVP Section */
+        .rsvp-section {
+            background-color: #f9f5f0;
+            text-align: center;
+        }
+
+        .rsvp-form {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+            border-bottom: 2px solid #f0e6dc;
+            padding-bottom: 10px;
+        }
+
+        .guest-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .guest-label {
+            min-width: 80px;
+            font-weight: bold;
+        }
+
+        .guest-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .remove-guest {
+            background: #e75480;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add-guest-btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .add-guest-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .radio-option input {
+            margin-right: 5px;
+        }
+
+        .children-container {
+            margin-top: 15px;
+        }
+
+        .child-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 15px;
+        }
+
+        .child-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .add-child-btn {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .add-child-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .allergy-input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #999;
+        }
+
+        .allergy-input:focus {
+            color: #333;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #654321;
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #8B4513;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #8B4513;
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #8B4513;
+        }
+
+        .phone-numbers {
+            margin-bottom: 25px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .phone-number {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .whatsapp-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+
+	.telegram-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+	}
+
+	.telegram-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+            font-weight: bold;
+	}
+
+	.telegram-button:hover {
+            background-color: #006699;
+            transform: translateY(-3px);
+	}
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-heart {
+            color: #e75480;
+            margin: 0 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .names {
+                font-size: 2.5rem;
+            }
+            
+            .date {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .countdown-item {
+                min-width: 80px;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .whatsapp-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .guest-row, .child-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .guest-label {
+                min-width: auto;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        .rsvp-button {
+            background: #8B4513;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with invitation -->
+    <header>
+        <h1 class="names">Владимир <span class="heart">&</span> Полина</h1>
+        <p class="date">12 декабря 2025</p>
+        <p class="invitation-text">Приглашаем Вас разделить с нами радость нашего бракосочетания</p>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Couple Section -->
+    <section class="couple-section">
+        <div class="container">
+            <h2 class="section-title">Жених и Невеста</h2>
+            <div class="couple-container">
+                <div class="person">
+                    <img src="assets/images/husband.jpg" alt="Жених" class="person-img">
+                    <h3 class="person-name">Владимир</h3>
+                    <p class="person-role">Жених</p>
+                </div>
+                <div class="person">
+                    <img src="assets/images/wife.jpg" alt="Невеста" class="person-img">
+                    <h3 class="person-name">Полина</h3>
+                    <p class="person-role">Невеста</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section">
+        <div class="container">
+            <h2 class="section-title">Детали мероприятия</h2>
+            <div class="details-container">
+                <div class="details-text">
+                    <h3 class="details-title">Свадебная церемония</h3>
+                    <p class="details-info"><i class="fas fa-calendar-alt"></i> <strong>Дата:</strong> 12 декабря 2025 года</p>
+                    <p class="details-info"><i class="fas fa-clock"></i> <strong>Время:</strong> 15:00</p>
+                    <p class="details-info"><i class="fas fa-map-marker-alt"></i> <strong>Место:</strong> Bahnhof</p>
+                    <p class="details-info"><i class="fas fa-home"></i> <strong>Адрес:</strong> Покровская ул., 7, Волжский</p>
+		    <p class="details-info"><i class="fas fa-microphone"></i> <strong>Ведущий:</strong> Евгений Олейников</p>
+		    <div style="margin: 15px 0;">
+		        <a href="https://t.me/BelyyNiger" target="_blank" class="rsvp-button" style="display: inline-block; text-decoration: none;">
+		            <i class="fas fa-gift"></i> Сообщить ведущему о творческом поздравлении
+		        </a>
+		    </div>
+                    <p style="margin-top: 20px; font-style: italic;">Мы будем счастливы видеть Вас на нашем торжестве и разделить с Вами этот особенный день!</p>
+                </div>
+                <div class="details-map" id="yandexMap">
+                    <div class="map-overlay">
+                        <div class="map-overlay-text">Открыть в Яндекс Картах</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">До свадьбы осталось</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">0</div>
+                    <div class="countdown-label">дней</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">0</div>
+                    <div class="countdown-label">часов</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">0</div>
+                    <div class="countdown-label">минут</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">0</div>
+                    <div class="countdown-label">секунд</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title">Подтвердите присутствие</h2>
+            <p>Пожалуйста, сообщите о своем присутствии до 27 ноября 2025 года</p>
+            
+            <form id="rsvpForm" class="rsvp-form">
+                <!-- Question 1: Guest Names -->
+                <div class="form-group">
+                    <h3 class="form-title">1. Ваше имя и фамилия</h3>
+                    <div id="guestNamesContainer">
+                        <div class="guest-row">
+                            <span class="guest-label">Гость 1</span>
+                            <input type="text" class="guest-input" name="guest1" placeholder="Введите имя и фамилию" required>
+                        </div>
+                    </div>
+                    <button type="button" id="addGuestBtn" class="add-guest-btn">Добавить гостя от 14 лет</button>
+                </div>
+                
+                <!-- Question 2: Attendance -->
+                <div class="form-group">
+                    <h3 class="form-title">2. Сможете ли Вы присутствовать на свадьбе?</h3>
+                    <div id="attendanceContainer">
+                        <div class="guest-row">
+                            <span class="guest-label">Гость 1</span>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="attendance1" value="Да" required> Да
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="attendance1" value="Нет" required> Нет
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Question 3: Children -->
+                <div class="form-group">
+                    <h3 class="form-title">3. Укажите детей до 14 лет, которые будут присутствовать с вами</h3>
+                    <div id="childrenContainer"></div>
+                    <button type="button" id="addChildBtn" class="add-child-btn">Добавить ребенка</button>
+                </div>
+                
+                <!-- Question 4: Drinks -->
+                <div class="form-group">
+                    <h3 class="form-title">4. Что Вы предпочитаете из напитков?</h3>
+                    <div id="drinksContainer">
+                        <div class="guest-row">
+                            <span class="guest-label">Гость 1</span>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Безалкогольные" required> Безалкогольные
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Шампанское" required> Шампанское
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Вино белое" required> Вино белое
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Вино красное" required> Вино красное
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Водка" required> Водка
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="drink1" value="Коньяк" required> Коньяк
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Question 5: Meat dishes -->
+                <div class="form-group">
+                    <h3 class="form-title">5. Что Вы предпочитаете из мясных блюд?</h3>
+                    <div id="meatContainer">
+                        <div class="guest-row">
+                            <span class="guest-label">Гость 1</span>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="meat1" value="Курица" required> Курица
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="meat1" value="Свинина" required> Свинина
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="meat1" value="Говядина" required> Говядина
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="meat1" value="Рыба" required> Рыба
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Question 6: Allergies -->
+                <div class="form-group">
+                    <h3 class="form-title">6. Предупредите нас о Вашей аллергии на продукты</h3>
+                    <input type="text" class="allergy-input" name="allergy" placeholder="Укажите аллергию или Имя гостя и его аллергию">
+                </div>
+                
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Отправка данных...</p>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submitBtn">Отправить данные о присутствии</button>
+            </form>
+            
+            <div style="margin-top: 20px;">
+                <button id="contactBtn" class="rsvp-button">Связаться с молодожёнами</button>
+                <p style="margin-top: 15px; font-size: 0.9rem;">Также можете позвонить или написать</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for contact info -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Свяжитесь с нами</h3>
+            <div class="phone-numbers">
+                <div class="phone-number">Жених - +7 (977) 105-01-35</div>
+                <div class="phone-number">Невеста - +7 (903) 478-74-75</div>
+            </div>
+            <div class="whatsapp-buttons">
+                <a href="https://wa.me/79771050135" class="whatsapp-button" target="_blank">WhatsApp жениха</a>
+                <a href="https://wa.me/79034787475" class="whatsapp-button" target="_blank">WhatsApp невесты</a>
+            </div>
+            <div class="telegram-buttons" style="margin-top: 15px;">
+                <a href="https://t.me/BelyyNiger" class="telegram-button" target="_blank">Telegram жениха</a>
+                <a href="https://t.me/PolinaP113" class="telegram-button" target="_blank">Telegram невесты</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>С любовью, Полина и Владимир <span class="footer-heart">❤</span></p>
+            <p>© 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // === КОНФИГУРАЦИЯ ТЕЛЕГРАМ БОТА ===
+        
+        // Функция для отправки данных в Telegram
+        async function sendToTelegram(data) {
+            try {
+                // Форматируем сообщение для Telegram
+                let message = `🎉 *Новый ответ на приглашение!*\n\n`;
+                
+                // Гости
+                message += `*Гости:*\n`;
+                for (let i = 1; i <= guestCount; i++) {
+                    const guestName = data[`guest${i}`] || 'Не указано';
+                    const attendance = data[`attendance${i}`] || 'Не указано';
+                    message += `👤 Гость ${i}: ${guestName} (${attendance})\n`;
+                }
+                
+                // Дети
+                if (childCount > 0) {
+                    message += `\n*Дети:*\n`;
+                    for (let i = 1; i <= childCount; i++) {
+                        const childName = data[`child${i}`];
+                        if (childName) {
+                            message += `👶 ${childName}\n`;
+                        }
+                    }
+                }
+                
+                // Предпочтения
+                message += `\n*Предпочтения:*\n`;
+                for (let i = 1; i <= guestCount; i++) {
+                    const guestName = data[`guest${i}`] || `Гость ${i}`;
+                    const drink = data[`drink${i}`] || 'Не указано';
+                    const meat = data[`meat${i}`] || 'Не указано';
+                    message += `🍽️ ${guestName}:\n`;
+                    message += `   Напитки: ${drink}\n`;
+                    message += `   Блюда: ${meat}\n\n`;
+                }
+                
+                // Аллергии
+                if (data.allergy) {
+                    message += `*⚠️ Аллергии:* ${data.allergy}\n`;
+                }
+                
+                // Отправляем сообщение в Telegram
+                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'Markdown'
+                    })
+                });
+                
+                const result = await response.json();
+                return result.ok;
+            } catch (error) {
+                console.error('Ошибка отправки в Telegram:', error);
+                return false;
+            }
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const weddingDate = new Date('December 12, 2025 16:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelector('.countdown-container').innerHTML = "<h3>Свадьба состоялась!</h3>";
+            }
+        }
+
+        // Update countdown every second
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Smooth scrolling
+        document.querySelector('.scroll-down').addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('contactModal');
+        const contactBtn = document.getElementById('contactBtn');
+        const closeModal = document.querySelector('.close-modal');
+
+        // Open modal when contact button is clicked
+        contactBtn.addEventListener('click', function() {
+            modal.style.display = 'flex';
+        });
+
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Make map clickable to open full Yandex Maps
+        document.querySelector('.details-map').addEventListener('click', function() {
+            window.open('https://yandex.ru/maps/-/CLRfyC9s', '_blank');
+        });
+
+        // Load Yandex Map
+        function loadYandexMap() {
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.charset = 'utf-8';
+            script.async = true;
+            script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51f5c6a876e36756808b4f45db19dd90014e839866969388b815599a12bdee1e&width=100%&height=400&lang=ru_RU&scroll=true';
+            document.getElementById('yandexMap').appendChild(script);
+        }
+
+        // Load the map when the page is ready
+        window.addEventListener('DOMContentLoaded', loadYandexMap);
+
+        // RSVP Form Functionality
+        let guestCount = 1;
+        let childCount = 0;
+
+        // Функция для обновления видимости вопросов 4 и 5 для конкретного гостя
+        function updateGuestQuestionsVisibility(guestNumber) {
+            const attendanceRadio = document.querySelector(`input[name="attendance${guestNumber}"]:checked`);
+            const drinksRow = document.querySelector(`#drinksContainer .guest-row:nth-child(${guestNumber})`);
+            const meatRow = document.querySelector(`#meatContainer .guest-row:nth-child(${guestNumber})`);
+            
+            if (attendanceRadio && attendanceRadio.value === 'Нет') {
+                // Если выбран "Нет", заменяем радиокнопки на прочерк
+                if (drinksRow) {
+                    drinksRow.querySelector('.radio-group').innerHTML = '<span style="color: #999; font-style: italic;">—</span>';
+                    // Создаем скрытое поле для сохранения значения
+                    if (!drinksRow.querySelector('input[type="hidden"]')) {
+                        const hiddenInput = document.createElement('input');
+                        hiddenInput.type = 'hidden';
+                        hiddenInput.name = `drink${guestNumber}`;
+                        hiddenInput.value = 'Не присутствует';
+                        drinksRow.appendChild(hiddenInput);
+                    }
+                }
+                if (meatRow) {
+                    meatRow.querySelector('.radio-group').innerHTML = '<span style="color: #999; font-style: italic;">—</span>';
+                    // Создаем скрытое поле для сохранения значения
+                    if (!meatRow.querySelector('input[type="hidden"]')) {
+                        const hiddenInput = document.createElement('input');
+                        hiddenInput.type = 'hidden';
+                        hiddenInput.name = `meat${guestNumber}`;
+                        hiddenInput.value = 'Не присутствует';
+                        meatRow.appendChild(hiddenInput);
+                    }
+                }
+            } else {
+                // Если выбран "Да" или ничего не выбрано, показываем обычные радиокнопки
+                if (drinksRow && !drinksRow.querySelector('input[type="radio"]')) {
+                    drinksRow.querySelector('.radio-group').innerHTML = `
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Безалкогольные"> Безалкогольные
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Шампанское"> Шампанское
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Вино белое"> Вино белое
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Вино красное"> Вино красное
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Водка"> Водка
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestNumber}" value="Коньяк"> Коньяк
+                        </label>
+                    `;
+                    // Удаляем скрытое поле если оно есть
+                    const hiddenInput = drinksRow.querySelector('input[type="hidden"]');
+                    if (hiddenInput) {
+                        hiddenInput.remove();
+                    }
+                }
+                
+                if (meatRow && !meatRow.querySelector('input[type="radio"]')) {
+                    meatRow.querySelector('.radio-group').innerHTML = `
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestNumber}" value="Курица"> Курица
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestNumber}" value="Свинина"> Свинина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestNumber}" value="Говядина"> Говядина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestNumber}" value="Рыба"> Рыба
+                        </label>
+                    `;
+                    // Удаляем скрытое поле если оно есть
+                    const hiddenInput = meatRow.querySelector('input[type="hidden"]');
+                    if (hiddenInput) {
+                        hiddenInput.remove();
+                    }
+                }
+            }
+        }
+
+        // Функция для обновления видимости всех вопросов
+        function updateAllQuestionsVisibility() {
+            for (let i = 1; i <= guestCount; i++) {
+                updateGuestQuestionsVisibility(i);
+            }
+        }
+
+        // Добавляем обработчики событий для радиокнопок присутствия
+        function addAttendanceEventListeners() {
+            for (let i = 1; i <= guestCount; i++) {
+                const attendanceRadios = document.querySelectorAll(`input[name="attendance${i}"]`);
+                attendanceRadios.forEach(radio => {
+                    radio.addEventListener('change', updateAllQuestionsVisibility);
+                });
+            }
+        }
+
+        // Add guest functionality
+        document.getElementById('addGuestBtn').addEventListener('click', function() {
+            if (guestCount < 5) {
+                guestCount++;
+                
+                // Add guest name field
+                const guestNamesContainer = document.getElementById('guestNamesContainer');
+                const newGuestRow = document.createElement('div');
+                newGuestRow.className = 'guest-row';
+                newGuestRow.innerHTML = `
+                    <span class="guest-label">Гость ${guestCount}</span>
+                    <input type="text" class="guest-input" name="guest${guestCount}" placeholder="Введите имя и фамилию" required>
+                    <button type="button" class="remove-guest">×</button>
+                `;
+                guestNamesContainer.appendChild(newGuestRow);
+                
+                // Add attendance field
+                const attendanceContainer = document.getElementById('attendanceContainer');
+                const newAttendanceRow = document.createElement('div');
+                newAttendanceRow.className = 'guest-row';
+                newAttendanceRow.innerHTML = `
+                    <span class="guest-label">Гость ${guestCount}</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="attendance${guestCount}" value="Да" required> Да
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="attendance${guestCount}" value="Нет" required> Нет
+                        </label>
+                    </div>
+                `;
+                attendanceContainer.appendChild(newAttendanceRow);
+                
+                // Add drinks field
+                const drinksContainer = document.getElementById('drinksContainer');
+                const newDrinksRow = document.createElement('div');
+                newDrinksRow.className = 'guest-row';
+                newDrinksRow.innerHTML = `
+                    <span class="guest-label">Гость ${guestCount}</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Безалкогольные"> Безалкогольные
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Шампанское"> Шампанское
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Вино белое"> Вино белое
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Вино красное"> Вино красное
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Водка"> Водка
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink${guestCount}" value="Коньяк"> Коньяк
+                        </label>
+                    </div>
+                `;
+                drinksContainer.appendChild(newDrinksRow);
+                
+                // Add meat field
+                const meatContainer = document.getElementById('meatContainer');
+                const newMeatRow = document.createElement('div');
+                newMeatRow.className = 'guest-row';
+                newMeatRow.innerHTML = `
+                    <span class="guest-label">Гость ${guestCount}</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestCount}" value="Курица"> Курица
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestCount}" value="Свинина"> Свинина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestCount}" value="Говядина"> Говядина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat${guestCount}" value="Рыба"> Рыба
+                        </label>
+                    </div>
+                `;
+                meatContainer.appendChild(newMeatRow);
+                
+                // Update button state
+                if (guestCount === 5) {
+                    this.disabled = true;
+                }
+                
+                // Add event listener to remove button
+                newGuestRow.querySelector('.remove-guest').addEventListener('click', function() {
+                    removeGuest(guestCount);
+                });
+                
+                // Добавляем обработчики событий для новых радиокнопок
+                addAttendanceEventListeners();
+            }
+        });
+        
+        // Remove guest functionality
+        function removeGuest(guestNumber) {
+            if (guestNumber > 1) {
+                // Remove guest name field
+                const guestRows = document.querySelectorAll('#guestNamesContainer .guest-row');
+                guestRows[guestRows.length - 1].remove();
+                
+                // Remove attendance field
+                const attendanceRows = document.querySelectorAll('#attendanceContainer .guest-row');
+                attendanceRows[attendanceRows.length - 1].remove();
+                
+                // Remove drinks field
+                const drinksRows = document.querySelectorAll('#drinksContainer .guest-row');
+                drinksRows[drinksRows.length - 1].remove();
+                
+                // Remove meat field
+                const meatRows = document.querySelectorAll('#meatContainer .guest-row');
+                meatRows[meatRows.length - 1].remove();
+                
+                guestCount--;
+                
+                // Update button state
+                document.getElementById('addGuestBtn').disabled = false;
+                
+                // Обновляем обработчики событий
+                addAttendanceEventListeners();
+            }
+        }
+        
+        // Add child functionality
+        document.getElementById('addChildBtn').addEventListener('click', function() {
+            if (childCount < 4) {
+                childCount++;
+                
+                const childrenContainer = document.getElementById('childrenContainer');
+                const newChildRow = document.createElement('div');
+                newChildRow.className = 'child-row';
+                newChildRow.innerHTML = `
+                    <input type="text" class="child-input" name="child${childCount}" placeholder="Имя ребенка">
+                    <button type="button" class="remove-guest">×</button>
+                `;
+                childrenContainer.appendChild(newChildRow);
+                
+                // Update button state
+                if (childCount === 4) {
+                    this.disabled = true;
+                }
+                
+                // Add event listener to remove button
+                newChildRow.querySelector('.remove-guest').addEventListener('click', function() {
+                    removeChild(childCount);
+                });
+            }
+        });
+        
+        // Remove child functionality
+        function removeChild(childNumber) {
+            if (childNumber > 0) {
+                const childRows = document.querySelectorAll('#childrenContainer .child-row');
+                childRows[childRows.length - 1].remove();
+                
+                childCount--;
+                
+                // Update button state
+                document.getElementById('addChildBtn').disabled = false;
+            }
+        }
+        
+        // Form submission
+        document.getElementById('rsvpForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            
+            // Показываем загрузку
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            try {
+                // Отправляем данные в Telegram
+                const success = await sendToTelegram(data);
+                
+                if (success) {
+                    alert('Спасибо за вашу заявку! Данные успешно отправлены.');
+                    resetForm();
+                } else {
+                    throw new Error('Ошибка отправки');
+                }
+            } catch (error) {
+                console.error('Ошибка:', error);
+                alert('Произошла ошибка при отправке данных. Пожалуйста, свяжитесь с нами напрямую.');
+            } finally {
+                // Скрываем загрузку
+                submitBtn.disabled = false;
+                loading.style.display = 'none';
+            }
+        });
+        
+        // Функция сброса формы
+        function resetForm() {
+            document.getElementById('rsvpForm').reset();
+            guestCount = 1;
+            childCount = 0;
+            
+            // Reset containers to only first guest
+            document.getElementById('guestNamesContainer').innerHTML = `
+                <div class="guest-row">
+                    <span class="guest-label">Гость 1</span>
+                    <input type="text" class="guest-input" name="guest1" placeholder="Введите имя и фамилию" required>
+                </div>
+            `;
+            
+            document.getElementById('attendanceContainer').innerHTML = `
+                <div class="guest-row">
+                    <span class="guest-label">Гость 1</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="attendance1" value="Да" required> Да
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="attendance1" value="Нет" required> Нет
+                        </label>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('drinksContainer').innerHTML = `
+                <div class="guest-row">
+                    <span class="guest-label">Гость 1</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Безалкогольные"> Безалкогольные
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Шампанское"> Шампанское
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Вино белое"> Вино белое
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Вино красное"> Вино красное
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Водка"> Водка
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="drink1" value="Коньяк"> Коньяк
+                        </label>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('meatContainer').innerHTML = `
+                <div class="guest-row">
+                    <span class="guest-label">Гость 1</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="meat1" value="Курица"> Курица
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat1" value="Свинина"> Свинина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat1" value="Говядина"> Говядина
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="meat1" value="Рыба"> Рыба
+                        </label>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('childrenContainer').innerHTML = '';
+            
+            // Reset buttons
+            document.getElementById('addGuestBtn').disabled = false;
+            document.getElementById('addChildBtn').disabled = false;
+            
+            // Добавляем обработчики событий после сброса формы
+            addAttendanceEventListeners();
+        }
+        
+        // Инициализация обработчиков событий при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            addAttendanceEventListeners();
+        });
+    </script>
+</body>
+</html>
